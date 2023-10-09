@@ -19,6 +19,8 @@ if (geoLoc !== null)
     var storedLat = localStorage.getItem("Latitude");
     var storedLong = localStorage.getItem("Longitude");
     console.log(storedLong, storedLat);
+    
+    
     if (Modernizr.geolocation) {                             
         navigator.geolocation.getCurrentPosition(success, fail);  
         elMap.textContent = 'Checking location...';              
@@ -31,7 +33,9 @@ if (geoLoc !== null)
         msg += localStorage.getItem("Longitude") + '</h3>';        
         msg += '<h3>Latitude:<br>';                               
         msg += localStorage.getItem("Latitude") + '</h3>';
-        elMap.innerHTML = msg + "<h1>Welcome back User!</h1>";      
+        var distance = calcDistanceBetweenPoints(storedLat, storedLong, position.coords.latitude, position.coords.longitude)
+        msg += "</h1><h1>Welcome back User!</h1>"
+        elMap.innerHTML = msg + "<h1>you have traveled " + distance + " meters ("+distance/1000+"km) since you last logged in!";      
         
         
         localStorage.setItem("Longitude", position.coords.longitude);
@@ -43,9 +47,6 @@ if (geoLoc !== null)
         console.log(msg.code);                                    
       }
                            
-        
-                                   
-    
 }
 else
 {
@@ -62,9 +63,11 @@ else
         msg += position.coords.longitude + '</h3>';        
         msg += '<h3>Latitude:<br>';                               
         msg += position.coords.latitude + '</h3>';
-        elMap.innerHTML = msg;             
+        elMap.innerHTML = msg; 
+
         localStorage.setItem("Longitude", position.coords.longitude);
-        localStorage.setItem("Latitude", position.coords.latitude);                                     
+        localStorage.setItem("Latitude", position.coords.latitude);    
+        
       }
       
       function fail(msg) {                                        
