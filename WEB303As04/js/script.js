@@ -5,30 +5,7 @@
 
 $(function () {
     // your code here
-    var elMap = document.getElementById('locationhere');
-    var failMsg = "I'm sorry, we werent able to get your location for you";
-        if (Modernizer.geolocation) 
-        {
-            navigator.geolocation.getCurrentPosition(success, fail);
-            elMap.textContent = 'Checking location.';
-        }else{
-            elMap.textContent = failMsg;
-        }
-
-        function success(position)
-        {
-            msg = '<h3>Longitude:<br>';
-            msg += position.coords.Longitude + '</h3>';
-            msg += '<h3>Latitude:<br>';
-            msg += position.coords.Latitude + '</h3>';
-            elMap.innerHTML = msg;
-        }
-
-        function fail(msg) 
-        {
-            elMap.textContent = msg;
-            console.log(msg.code);
-        }
+   
 
 
 
