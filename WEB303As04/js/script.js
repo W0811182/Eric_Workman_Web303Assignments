@@ -7,29 +7,72 @@
 /* global Modernizer */
 $(function () {
     // your code here
+    
+    var geoLoc = localStorage.getItem("Longitude");
+    console.log(geoLoc);
 
-var elMap = document.getElementById('locationhere');                 
-var msg = 'Sorry, we were unable to get your location.';   
+    var elMap = document.getElementById('locationhere');                 
+    var msg = 'Sorry, we were unable to get your location.';   
 
-if (Modernizr.geolocation) {                             
-  navigator.geolocation.getCurrentPosition(success, fail);  
-  elMap.textContent = 'Checking location...';              
-} else {                                                   
-  elMap.textContent = msg;                                 
+if (geoLoc !== null)
+{  
+    var storedLat = localStorage.getItem("Latitude");
+    var storedLong = localStorage.getItem("Longitude");
+    console.log(storedLong, storedLat);
+    if (Modernizr.geolocation) {                             
+        navigator.geolocation.getCurrentPosition(success, fail);  
+        elMap.textContent = 'Checking location...';              
+      } else {                                                   
+        elMap.textContent = msg;                                 
+      }
+      
+      function success(position) {    
+        msg = '<h3>Longitude:<br>';                        
+        msg += localStorage.getItem("Longitude") + '</h3>';        
+        msg += '<h3>Latitude:<br>';                               
+        msg += localStorage.getItem("Latitude") + '</h3>';
+        elMap.innerHTML = msg + "<h1>Welcome back User!</h1>";      
+        
+        
+        localStorage.setItem("Longitude", position.coords.longitude);
+        localStorage.setItem("Latitude", position.coords.latitude);                                     
+      }
+      
+      function fail(msg) {                                        
+        elMap.textContent = msg;                                  
+        console.log(msg.code);                                    
+      }
+                           
+        
+                                   
+    
+}
+else
+{
+    if (Modernizr.geolocation) {                             
+        navigator.geolocation.getCurrentPosition(success, fail);  
+        elMap.textContent = 'Checking location...';              
+      } else {                                                   
+        elMap.textContent = msg;                                 
+      }
+      
+      function success(position) {    
+        msg = '<h1>Hello New User!</h1><br>'                 
+        msg += '<h3>Longitude:<br>';                        
+        msg += position.coords.longitude + '</h3>';        
+        msg += '<h3>Latitude:<br>';                               
+        msg += position.coords.latitude + '</h3>';
+        elMap.innerHTML = msg;             
+        localStorage.setItem("Longitude", position.coords.longitude);
+        localStorage.setItem("Latitude", position.coords.latitude);                                     
+      }
+      
+      function fail(msg) {                                        
+        elMap.textContent = msg;                                  
+        console.log(msg.code);                                    
+      }
 }
 
-function success(position) {                       
-  msg = '<h3>Longitude:<br>';                        
-  msg += position.coords.longitude + '</h3>';        
-  msg += '<h3>Latitude:<br>';                               
-  msg += position.coords.latitude + '</h3>';               
-  elMap.innerHTML = msg;                                    
-}
-
-function fail(msg) {                                        
-  elMap.textContent = msg;                                  
-  console.log(msg.code);                                    
-}
 
 
     // DO NOT EDIT ANY CODE IN THIS FUNCTION DEFINTION
