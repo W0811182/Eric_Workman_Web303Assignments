@@ -1,0 +1,258 @@
+
+
+/****************************************************************************************************************************************************************************************************
+****************************************************************************************************************************************************************************************************
+*****************************************************************************************************************************************************************************************************
+*****************************************************************************************************************************************************************************************************
+
+As06
+Eric Workman
+2023-10-25
+*******************************************************************************************************************************************************************************************************/
+/*GENERAL STYLES*/
+header{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+h1{
+	text-align: center;
+	text-decoration: underline;
+	font-family: 'Advent Pro', Arial, sans-serif;
+	font-weight: 700;
+	font-size: 3em;
+}
+
+h2{
+	text-align: center;
+}
+
+p{
+	text-align: center;
+	font-size: 2em;
+	font-family: 'Advent Pro',Arial, sans-serif;
+
+
+}
+
+table {
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+table img{
+	border-radius: 25%;
+	border: solid black 2px;
+}
+
+th{
+	font-size: 2em;
+	text-align: center;
+	text-decoration: underline;
+}
+
+body{
+	height: max-content;
+	height: 100%;
+	background-color: #c9c5c5; 
+}
+
+figcaption{
+	visibility: hidden;
+}
+
+figcaption:hover{
+	visibility: visible;
+}
+
+table{
+	width: 60%;
+}
+
+td{
+	width: 50%;
+	font-size: 2em;
+}
+
+img{
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+
+figure{
+	width: 33%;
+	float: left;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figure img{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border-radius: 25%;
+	border: solid black 3px;
+}
+
+ul + img{
+	float: left;
+}
+
+.accordion-panel{
+	width: 80%;
+}
+#tab-3 ul, li{
+	margin-left: 25px;
+	list-style-type: none;
+}
+
+#tab-3 h2{
+	margin-left: 10px;
+}
+
+#tab-3 ul:nth-child(1){
+	text-decoration:underline;
+}
+
+#tab-2 h2 {
+	margin-left: 10px;
+}
+
+.item-1 li{
+	font-size: 1.5em;
+	margin-top: 14px;
+	text-align: center;
+}
+
+footer h2{
+	text-align: left;
+}
+/*ACCORDION STYLES*/
+.accordion, .menu {
+  background-color: #c9c4c4;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.accordion li{
+	padding: 0;
+  list-style-type: none;
+}
+
+.accordion-control, .accordion-control-2 {
+	background-color: #774e4e;
+  color: #fff;
+  display: block;
+  width: 20%;
+  padding: 0.5em 0.5em 0.5em 0.7em;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid #ffffff;
+}
+
+.accordion-panel {
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.accordion-panel p, ul {
+	margin: 20px;
+}
+
+.accordion-panel img {
+	display: block;
+}
+
+.other-works{
+	width: 100%;
+	height: 100%;
+}
+.section-2{
+	margin-top: 4px;
+}
+
+#tab-5 li{
+	margin: 50px;
+	padding: 20px;
+	border-radius: 10%;
+	border: double black 6px;
+}
+accordion-panel:focus-visible
+{
+	border: solid black 2px;
+}
+/*TAB STYLES*/
+
+.tabbed{
+	margin-top: 2.5em;
+}
+.tab-list{
+	margin-right: auto;
+	margin-left: auto;
+	width: max-content;
+	padding: 0;
+}
+
+.tab-list li {
+	display: inline-block;
+	list-style-type: none;
+	background-color: #803f3f;
+	border-bottom: 3px solid #f2f2f2;
+	font-family:'Courier New', Courier, monospace;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.tab-list li a {
+	color: #f2f2f2;
+	display: block;
+	padding: 3px 10px 3px 10px;
+}
+
+.tab-list li.active, .tab-list li.hover {
+	background-color: #f05b5b;
+  	border-bottom: 3px solid #3d2222;
+}
+
+.tab-list li.active a, .tab-list li a:hover{
+	color: #161414;
+  	background-color: #ad7f7f;
+}
+
+
+
+/******** PANELS *********/
+
+.tab-panel {
+	display: none;
+	background-color: #c9c4c4;
+	color: #131212;
+	min-height: 150px;
+	overflow: auto;
+	border: solid black 2px;
+}
+
+.tab-panel.active {
+	display: block;
+	width: 60%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	background: rgb(143,130,125);
+	background: linear-gradient(11deg, rgba(143,130,125,1) 5%, rgba(228,226,208,1) 94%); 
+}
+
+.tab-panel p {
+	margin: 20px
+}
