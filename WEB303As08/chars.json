@@ -1,0 +1,51 @@
+[
+    {
+        "fname": "Jeff",
+        "lname": "Winger",
+        "age": "35",
+        "major": "Education",
+        "sex": "m" 
+    },
+    {
+        "fname": "Annie",
+        "lname": "Edison",
+        "age": "19",
+        "major": "Hospital Administration",
+        "sex": "f" 
+    },
+    {
+        "fname": "Abed",
+        "lname": "Nadir",
+        "age": "21",
+        "major": "Film",
+        "sex": "m" 
+    },
+    {
+        "fname": "Shirley",
+        "lname": "Bennett",
+        "age": "38",
+        "major": "Business",
+        "sex": "f" 
+    },
+    {
+        "fname": "Pierce",
+        "lname": "Hawthorne",
+        "age": "65",
+        "major": "Unknown",
+        "sex": "m" 
+    },
+    {
+        "fname": "Troy",
+        "lname": "Barnes",
+        "age": "20",
+        "major": "Air Conditioning Repair",
+        "sex": "m" 
+    },
+    {
+        "fname": "Britta",
+        "lname": "Perry",
+        "age": "29",
+        "major": "Psychology",
+        "sex": "f" 
+    }
+]
