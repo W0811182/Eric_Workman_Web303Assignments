@@ -1,0 +1,14 @@
+body{
+    background-color: grey;
+}
+
+a.ascending::after {
+    content: "\25B2";
+}
+
+a.descending::after{
+    content: "\25BC";
+}
+a.no-sort::after{
+    content: "";
+}

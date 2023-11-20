@@ -1,0 +1,51 @@
+[
+    {
+        "fname": "Jeff",
+        "lname": "Winger",
+        "doB": "1974-11-20",
+        "major": "Education",
+        "sex": "m" 
+    },
+    {
+        "fname": "Annie",
+        "lname": "Edison",
+        "doB": "1990-12-19",
+        "major": "Hospital Administration",
+        "sex": "f" 
+    },
+    {
+        "fname": "Abed",
+        "lname": "Nadir",
+        "doB": "1988-11-01",
+        "major": "Film",
+        "sex": "m" 
+    },
+    {
+        "fname": "Shirley",
+        "lname": "Bennett",
+        "doB": "1971-08-12",
+        "major": "Business",
+        "sex": "f" 
+    },
+    {
+        "fname": "Pierce",
+        "lname": "Hawthorne",
+        "doB": "1944-11-27",
+        "major": "Unknown",
+        "sex": "m" 
+    },
+    {
+        "fname": "Troy",
+        "lname": "Barnes",
+        "doB": "1989-12-04",
+        "major": "Air Conditioning Repair",
+        "sex": "m" 
+    },
+    {
+        "fname": "Britta",
+        "lname": "Perry",
+        "doB": "1980-10-19",
+        "major": "Psychology",
+        "sex": "f" 
+    }
+]
