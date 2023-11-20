@@ -2,49 +2,49 @@
     {
         "fname": "Jeff",
         "lname": "Winger",
-        "age": "35",
+        "doB": "1974-11-20",
         "major": "Education",
         "sex": "m" 
     },
     {
         "fname": "Annie",
         "lname": "Edison",
-        "age": "19",
+        "doB": "1990-12-19",
         "major": "Hospital Administration",
         "sex": "f" 
     },
     {
         "fname": "Abed",
         "lname": "Nadir",
-        "age": "21",
+        "doB": "1988-11-01",
         "major": "Film",
         "sex": "m" 
     },
     {
         "fname": "Shirley",
         "lname": "Bennett",
-        "age": "38",
+        "doB": "1971-08-12",
         "major": "Business",
         "sex": "f" 
     },
     {
         "fname": "Pierce",
         "lname": "Hawthorne",
-        "age": "65",
+        "doB": "1944-11-27",
         "major": "Unknown",
         "sex": "m" 
     },
     {
         "fname": "Troy",
         "lname": "Barnes",
-        "age": "20",
+        "doB": "1989-12-04",
         "major": "Air Conditioning Repair",
         "sex": "m" 
     },
     {
         "fname": "Britta",
         "lname": "Perry",
-        "age": "29",
+        "doB": "1980-10-19",
         "major": "Psychology",
         "sex": "f" 
     }

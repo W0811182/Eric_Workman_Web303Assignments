@@ -11,9 +11,9 @@ $('table').addClass('tbl');
 let $headingRow = $('<tr/>').addClass('headingRow'); //store and add 'Headingrow' class to new tr
 
 $('thead').append($headingRow); // add table headers to table head
-$headingRow.append($('<td/>').text('fname'));
-$headingRow.append($('<td/>').text('lname'));
-$headingRow.append($('<td/>').text('age'));
+$headingRow.append($('<td/>').text('first name'));
+$headingRow.append($('<td/>').text('last name'));
+$headingRow.append($('<td/>').text('date of birth'));
 $headingRow.append($('<td/>').text('major'));
 $headingRow.append($('<td/>').text('sex'));
 
@@ -46,7 +46,7 @@ $.ajax({
             
             $row.append($('<td class="name"></td>').text(value.fname)); // insert data into row
             $row.append($('<td></td>').text(value.lname));
-            $row.append($('<td></td>').text(value.age));
+            $row.append($('<td></td>').text(value.doB));
             $row.append($('<td></td>').text(value.major));
             $row.append($('<td></td>').text(value.sex.toUpperCase()));
     
